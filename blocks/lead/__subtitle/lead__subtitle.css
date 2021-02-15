@@ -7,3 +7,19 @@
     padding: 0;
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    .lead__subtitle {
+        line-height: 4.7vw;
+        font-size: 3.9vw;
+        max-width: 83.3vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .lead__subtitle {
+        line-height: 20px;
+        font-size: 16px;
+        margin: 16px auto 0;
+    }
+}

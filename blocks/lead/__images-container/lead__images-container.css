@@ -4,3 +4,15 @@
     margin: 64px 0 0;
     padding: 0;
 }
+
+@media screen and (max-width: 1024px) {
+    .lead__images-container {
+        margin: 54px 0 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .lead__images-container {
+        margin: 40px 0 0;
+    }
+}
