@@ -1,0 +1,9 @@
+.lead__cover {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 95%;
+    margin: 0;
+    padding: 0;
+}
