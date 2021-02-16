@@ -1,0 +1,8 @@
+.place__right-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 55%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
