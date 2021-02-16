@@ -7,6 +7,10 @@
     z-index: 1;
     margin: 0;
     padding: 0;
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    -ms-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
 }
 
@@ -14,3 +18,23 @@
     opacity: .8;
 }
 
+@media screen and (max-width: 768px) {
+    .cover__overlay {
+        height: calc(100% - 90px);
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .cover__overlay {
+        width: calc(100% + 48px);
+        margin-left: -24px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cover__overlay {
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        height: calc(100% - 66px);
+    }
+}

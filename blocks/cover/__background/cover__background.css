@@ -4,3 +4,17 @@
     padding: 0;
     object-fit: cover;
 }
+
+@media screen and (max-width: 460px) {
+    .cover__background {
+        width: calc(100% + 48px);
+        margin-left: -24px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cover__background {
+        width: calc(100% + 32px);
+        margin: 32px 0 0 -16px;
+    }
+}
