@@ -6,9 +6,18 @@
     padding: 0;
 }
 
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 460px) {
     .intro__title {
-        line-height: 35px;
-        font-size: 32px;
+        line-height: 50px;
+        font-size: 46px;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .intro__title {
+        line-height: 44px;
+        font-size: 40px;
     }
 }
