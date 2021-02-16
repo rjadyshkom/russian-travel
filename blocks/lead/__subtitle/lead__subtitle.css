@@ -8,15 +8,28 @@
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 730px) {
     .lead__subtitle {
-        line-height: 4.7vw;
-        font-size: 3.9vw;
-        max-width: 83.3vw;
+        line-height: 30px;
+        font-size: 24px;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
+    .lead__subtitle {
+        line-height: 26px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .lead__subtitle {
+        line-height: 24px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 380px) {
     .lead__subtitle {
         line-height: 20px;
         font-size: 16px;
