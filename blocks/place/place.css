@@ -20,7 +20,7 @@
 @media screen and (max-width: 460px) {
     .place {
         flex-wrap: wrap;
-        gap: 32px
+        gap: 32px;
     }
 }
 
