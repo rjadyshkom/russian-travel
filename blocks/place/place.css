@@ -2,5 +2,26 @@
     display: flex;
     margin: 0 auto;
     padding: 0;
-    gap: 40px 40px;
+    gap: 40px;
 }
+
+@media screen and (max-width: 1024px) {
+    .place {
+        gap: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .place {
+        gap: 28px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .place {
+        flex-wrap: wrap;
+        gap: 32px
+    }
+}
+
+
