@@ -2,6 +2,7 @@
     max-width: 360px;
 }
 
+
 @media screen and (max-width: 460px) {
     .cover__subtitle {
         max-width: 80%;
