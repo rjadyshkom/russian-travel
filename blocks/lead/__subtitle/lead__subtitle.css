@@ -1,3 +1,16 @@
 .lead__subtitle {
-    max-width: 640px;
+    max-width: 540px;
 }
+
+@media screen and (max-width: 730px) {
+    .lead__subtitle {
+        max-width: 440px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .lead__subtitle {
+        max-width: 320px;
+    }
+}
+
