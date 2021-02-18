@@ -1,0 +1,33 @@
+.section-subtitle_size_m {
+    line-height: 36px;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 730px) {
+    .section-subtitle_size_m {
+        line-height: 30px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-subtitle_size_m {
+        line-height: 26px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .section-subtitle_size_m {
+        line-height: 24px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .section-subtitle_size_m {
+        line-height: 20px;
+        font-size: 16px;
+        margin: 16px auto 0;
+    }
+}
