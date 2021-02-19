@@ -1,0 +1,24 @@
+.place__first-column {
+    display: flex;
+    flex-basis: 45%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Согласно макету, с этого брейкпоинта изменяется выравнивание в колонках. В первой - старт, во второй энд (проглядел).
+Но я не могу понять, почему в макете во второй колонке появляется отступ сверху у элемента __website. И если его нужно
+просто создать, то где взять значение, т.к. в макете этого значения нет */
+
+@media screen and (max-width: 768px) {
+    .place__first-column {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .place__first-column {
+        flex-basis: 100%;
+    }
+}

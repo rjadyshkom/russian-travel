@@ -17,6 +17,12 @@
     }
 }
 
+@media screen and (max-width: 680px) {
+    .place {
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width: 460px) {
     .place {
         flex-wrap: wrap;

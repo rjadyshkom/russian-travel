@@ -1,17 +1,17 @@
-.page {
+.root__container {
     max-width: 1184px;
     margin: 0 auto;
     padding: 28px 48px 24px;
 }
 
 @media screen and (max-width: 768px) {
-    .page {
+    .root__container {
         padding: 28px 24px 24px;
     }
 }
 
 @media screen and (max-width: 320px) {
-    .page {
+    .root__container {
         padding: 16px 16px 24px;
     }
 }

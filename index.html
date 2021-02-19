@@ -9,8 +9,13 @@
     <title>Путешествия по России</title>
 </head>
 <body class="root">
-<div class="page">
 
+<!-- Отличная рекоммендация! -->
+<div class="root__container">
+
+    <!-- Здесь не совсем понял для чего нужно использовать микс. Необходимые header отступы задаются у root__container.
+    Так как header первый блок в потоке, их достаточно для описания состояния. В целом логику совета я усвоил, но здесь
+    не применил. -->
     <header class="header">
         <img src="./images/header-logo.svg" alt="Логотип путешествий по России" class="header__logo">
         <ul class="header__lang-links">
@@ -21,14 +26,21 @@
 
     <main>
         <section class="lead">
+
+            <!-- &nbsp; вроде и так использую. Не понял комментарий. Возможно где-то нужно, а я не сделал? =) -->
             <h1 class="lead__title section-title section-title_size_xl">Путешествия по России</h1>
             <p class="lead__subtitle section-subtitle section-subtitle_size_m">Настоящая страна не в выпусках новостей,
                 а здесь.</p>
             <div class="lead__images-container">
                 <img src="./images/lead-polka.jpg" alt="Женщина спит у окна в поезде" class="lead__image">
-                <img src="./images/lead-route.svg" alt="Маршрут путешествия" class="lead__cover">
+
+                <!-- Классный совет, не додумался бы. Надеюсь, реализовал верно. -->
+                <figure class="lead__figure">
+                    <img src="./images/lead-route.svg" alt="Маршрут путешествия" class="lead__cover">
+                    <figcaption class="lead__caption">ваша полка — верхняя</figcaption>
+                </figure>
             </div>
-            <p class="lead__caption">ваша полка — верхняя</p>
+
         </section>
 
         <article class="intro">
@@ -41,38 +53,41 @@
                 20 тысяч километров по родной стране. Мы выбрали и описали некоторые интересные места, достойные вашего
                 отпуска.</p>
             <ul class="intro__list">
-                <li>Часовых поясов 11</li>
-                <li>Объектов природного наследия ЮНЕСКО 12</li>
-                <li>Объектов культурного наследия ЮНЕСКО 16</li>
-                <li>Природных заповедников 105</li>
-                <li>Аэропортов 241</li>
+                <li>Часовых поясов <span class="intro__span-accent">11</span></li>
+                <li>Объектов природного наследия ЮНЕСКО <span class="intro__span-accent">12</span></li>
+                <li>Объектов культурного наследия ЮНЕСКО <span class="intro__span-accent">16</span></li>
+                <li>Природных заповедников <span class="intro__span-accent">105</span></li>
+                <li>Аэропортов <span class="intro__span-accent">241</span></li>
             </ul>
         </article>
 
         <section class="photo-grid">
-            <img src="./images/photo-grid-train.jpg" alt="Вид из окна поезда" class="photo-grid__item">
-            <img src="./images/photo-grid-atharva-tulsi.jpg" alt="Атхарва-тулси" class="photo-grid__item">
-            <img src="./images/photo-grid-tuman.jpg" alt="Туман" class="photo-grid__item">
-            <img src="./images/photo-grid-sochi.jpg" alt="Лес Сочи" class="photo-grid__item">
-            <img src="./images/photo-grid-arisa.jpg" alt="Машина на льду озера" class="photo-grid__item">
-            <img src="./images/photo-grid-baikal.jpg" alt="Байкал" class="photo-grid__item">
-            <img src="./images/photo-grid-elbrus.jpg" alt="Эльбрус" class="photo-grid__item">
-            <img src="./images/photo-grid-kondratiev.jpg" alt="Знак пешеходного перехода" class="photo-grid__item">
-            <img src="./images/photo-grid-kamchatka-1.jpg" alt="Камчатка" class="photo-grid__item">
-            <img src="./images/photo-grid-kamchatka-2.jpg" alt="Камчатка" class="photo-grid__item">
-            <img src="./images/photo-grid-baikal-2.jpg" alt="Байкал" class="photo-grid__item">
-            <img src="./images/photo-grid-ergaki.jpg" alt="Парк Ергаки" class="photo-grid__item">
+            <ul class="photo-grid__item-container">
+                <li><img src="./images/photo-grid-train.jpg" alt="Вид из окна поезда" class="photo-grid__item"></li>
+                <li><img src="./images/photo-grid-atharva-tulsi.jpg" alt="Атхарва-тулси" class="photo-grid__item"></li>
+                <li><img src="./images/photo-grid-tuman.jpg" alt="Туман" class="photo-grid__item"></li>
+                <li><img src="./images/photo-grid-sochi.jpg" alt="Лес Сочи" class="photo-grid__item"></li>
+                <li><img src="./images/photo-grid-arisa.jpg" alt="Машина на льду озера" class="photo-grid__item"></li>
+                <li><img src="./images/photo-grid-baikal.jpg" alt="Байкал" class="photo-grid__item"></li>
+                <li><img src="./images/photo-grid-elbrus.jpg" alt="Эльбрус" class="photo-grid__item"></li>
+                <li><img src="./images/photo-grid-kondratiev.jpg" alt="Знак пешеходного перехода"
+                         class="photo-grid__item"></li>
+                <li><img src="./images/photo-grid-kamchatka-1.jpg" alt="Камчатка" class="photo-grid__item"></li>
+                <li><img src="./images/photo-grid-kamchatka-2.jpg" alt="Камчатка" class="photo-grid__item"></li>
+                <li><img src="./images/photo-grid-baikal-2.jpg" alt="Байкал" class="photo-grid__item"></li>
+                <li><img src="./images/photo-grid-ergaki.jpg" alt="Парк Ергаки" class="photo-grid__item"></li>
+            </ul>
         </section>
 
         <section class="places">
             <article class="place">
-                <div class="place__left-column">
+                <div class="place__first-column">
                     <h2 class="place__title">Куршская коса</h2>
                     <img src="./images/place-kosa.jpg" alt="Куршская коса" class="place__image">
                 </div>
-                <div class="place__right-column">
+                <div class="place__second-column">
                     <div class="place__website">
-                        <span class="place__url-heading">URL</span>
+                        <span class="place__url-heading">url</span>
                         <a href="http://park-kosa.ru" target="_blank" class="place__link">park-kosa.ru</a>
                     </div>
                     <p class="place__paragraph">Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных
@@ -86,13 +101,13 @@
             </article>
 
             <article class="place">
-                <div class="place__left-column">
+                <div class="place__first-column">
                     <h2 class="place__title">Кольский</h2>
                     <img src="./images/place-kolsky.jpg" alt="Кольский полуостров" class="place__image">
                 </div>
-                <div class="place__right-column">
+                <div class="place__second-column">
                     <div class="place__website">
-                        <span class="place__url-heading">URL</span>
+                        <span class="place__url-heading">url</span>
                         <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" target="_blank"
                            class="place__link">National Geographic</a>
                     </div>
@@ -109,13 +124,13 @@
             </article>
 
             <article class="place">
-                <div class="place__left-column">
+                <div class="place__first-column">
                     <h2 class="place__title">Алтай</h2>
                     <img src="./images/place-altai.jpg" alt="Алтай" class="place__image">
                 </div>
-                <div class="place__right-column">
+                <div class="place__second-column">
                     <div class="place__website">
-                        <span class="place__url-heading">URL</span>
+                        <span class="place__url-heading">url</span>
                         <a href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822" target="_blank"
                            class="place__link">Facebook</a>
                     </div>
@@ -130,13 +145,13 @@
             </article>
 
             <article class="place">
-                <div class="place__left-column">
+                <div class="place__first-column">
                     <h2 class="place__title">Зимний Байкал</h2>
                     <img src="./images/place-winter-baikal.jpg" alt="Зимний Байкал" class="place__image">
                 </div>
-                <div class="place__right-column">
+                <div class="place__second-column">
                     <div class="place__website">
-                        <span class="place__url-heading">URL</span>
+                        <span class="place__url-heading">url</span>
                         <a href="https://vk.com/baikalmile" target="_blank"
                            class="place__link">https://vk.com/baikalmile</a>
                     </div>
@@ -151,13 +166,13 @@
             </article>
 
             <article class="place">
-                <div class="place__left-column">
+                <div class="place__first-column">
                     <h2 class="place__title">Карелия</h2>
                     <img src="./images/place-karelia.jpg" alt="Карелия" class="place__image">
                 </div>
-                <div class="place__right-column">
+                <div class="place__second-column">
                     <div class="place__website">
-                        <span class="place__url-heading">URL</span>
+                        <span class="place__url-heading">url</span>
                         <a href="http://vodlozero.ru" target="_blank"
                            class="place__link">http://vodlozero.ru</a>
                     </div>
