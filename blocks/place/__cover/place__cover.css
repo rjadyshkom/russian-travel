@@ -1,21 +1,20 @@
-.place__second-column {
+.place__cover {
     display: flex;
+    flex-basis: 45%;
     flex-direction: column;
-    flex-basis: 55%;
     justify-content: center;
     margin: 0;
     padding: 0;
 }
 
 @media screen and (max-width: 768px) {
-    .place__second-column {
-        justify-content: flex-end;
+    .place__cover {
+        justify-content: flex-start;
     }
 }
 
 @media screen and (max-width: 680px) {
-    .place__second-column {
+    .place__cover {
         flex-basis: 100%;
-        justify-content: flex-start;
     }
 }
