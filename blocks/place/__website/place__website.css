@@ -1,27 +1,7 @@
 .place__website {
     display: flex;
     flex-direction: column;
-    margin: 0 0 48px;
+    align-self: flex-end;
+    margin: 0;
     padding: 0;
 }
-
-/* Тот самый неполучаемый отступ. По аналогии с отступом снизу воткнул значения. По макету совпало =) */
-
-@media screen and (max-width: 768px) {
-    .place__website:nth-of-type(1) {
-        margin: 48px 0;
-    }
-}
-
-@media screen and (max-width: 680px) {
-    .place__website {
-        margin: 0 0 32px;
-    }
-
-    .place__website:nth-of-type(1) {
-        margin: 0 0 32px;
-    }
-}
-
-/* Здесь были стили, скрывающие элемент. В моём макете на мобильной версии он действительно отсутствует. Передал
-наставнику детали проблемки */

@@ -16,10 +16,10 @@
     }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 680px) {
     .places {
         padding: 64px 0;
-        gap: 49px;
+        gap: 50px;
     }
 }
 
