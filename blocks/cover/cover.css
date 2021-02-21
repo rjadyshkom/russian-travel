@@ -48,6 +48,18 @@
     }
 }
 
+@media screen and (max-width: 640px) {
+    .cover {
+        min-height: 350px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .cover {
+        min-height: 280px;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .cover {
         width: calc(100% + 32px);
